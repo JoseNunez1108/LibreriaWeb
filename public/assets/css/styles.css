@@ -1,0 +1,39 @@
+:root {
+    --primary-dark: #14213d;
+    --accent: #fca311;
+    --background-soft: #f4f6f9;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-soft);
+}
+
+.hero-section {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 33, 61, 0.95),
+            rgba(42, 68, 120, 0.9)
+        );
+    color: white;
+}
+
+.hero-description {
+    max-width: 700px;
+}
+
+.book-card {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.navbar-brand {
+    letter-spacing: 0.04rem;
+}
