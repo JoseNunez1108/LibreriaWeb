@@ -543,3 +543,12 @@ INSERT INTO `ventas` VALUES ('8042', '13-J-9', '1988-01-13 12:00:25');
 INSERT INTO `ventas` VALUES ('8042', '55-V-7', '1991-03-20 12:00:46');
 INSERT INTO `ventas` VALUES ('8042', '91-A-7', '1991-03-20 12:00:40');
 INSERT INTO `ventas` VALUES ('8042', '91-V-7', '1991-03-20 12:00:33');
+-- Tabla para almacenar los mensajes enviados desde el portal
+CREATE TABLE IF NOT EXISTS contacto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fecha DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    correo VARCHAR(150) NOT NULL,
+    nombre VARCHAR(150) NOT NULL,
+    asunto VARCHAR(200) NOT NULL,
+    comentario TEXT NOT NULL
+);
